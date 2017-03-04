@@ -1,0 +1,32 @@
+.imd-viewer * {
+    margin: 0;
+    padding: 0;
+}
+
+.imd-viewer-settings>div {
+    display: inline-block;
+}
+
+.imd-viewer-settings>div>label {
+    font-weight: bold;
+}
+
+.imd-viewer-input-height {
+    width: 6em;
+}
+
+.imd-viewer-input-one-screen-time {
+    width: 4em;
+}
+
+.imd-viewer-input-rate {
+    width: 4em;
+}
+
+.imd-viewer-container {
+    width: 100%;
+}
+
+.imd-viewer-audio {
+    width: 100%;
+}
