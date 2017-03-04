@@ -54,7 +54,7 @@ function imd_viewer_shortcode_parser($atts)
     ), $atts);
 
     $html = '
-<div class="imd-viewer" data-imd="' . htmlentities($a['imd']) . '" data-one-screen-time="' . htmlentities($a['one_screen_time']) . '">
+<div class="imd-viewer" data-imd="' . htmlentities($a['imd']) . '">
     <div class="imd-viewer-info">谱面预览，点击下方播放按钮开始加载mp3和imd。</div>
     <div class="imd-viewer-settings">
         <div><label>预览窗口高度：</label>预览窗口宽度×<input class="imd-viewer-input-height" value="' . htmlentities($a['height']) . '">。</div>
@@ -62,7 +62,7 @@ function imd_viewer_shortcode_parser($atts)
         <div><label>播放速率：</label><input class="imd-viewer-input-rate" value="' . htmlentities($a['rate']) . '">倍（1表示原速）。</div>
     </div>
     <div class="imd-viewer-container">
-        <canvas class="imd-viewer-canvas" width="864" height="480" data-height="' . htmlentities($a['height']) . '"></canvas>
+        <canvas class="imd-viewer-canvas" width="864" height="480"></canvas>
     </div>
     <div>
         <audio class="imd-viewer-audio" src="' . htmlentities($a['mp3']) . '" preload="none" controls="controls"></audio>
